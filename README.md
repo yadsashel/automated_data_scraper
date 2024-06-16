@@ -119,7 +119,8 @@ This tool allows users to analyze the technologies used on a website and scrape 
 ## Usage
 
 1. Run the script:
-    ```bash
+   
+   ```bash
     python scraper.py
     ```
 
@@ -150,7 +151,7 @@ Please choose which technology content you want to scrape:
 5. Apache
 Enter the number corresponding to your choice: 1
 Content saved to /Users/YourUsername/Downloads/scraped_html.txt
-
+```
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
