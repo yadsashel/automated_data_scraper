@@ -74,4 +74,3 @@ Please choose which technology content you want to scrape:
 5. Apache
 Enter the number corresponding to your choice: 1
 Content saved to /Users/YourUsername/Downloads/scraped_html.txt
-
