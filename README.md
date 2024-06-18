@@ -37,7 +37,28 @@ This tool allows users to analyze the technologies used on a website and scrape 
     pip install -r requirements.txt
     ```
 
-3. Install Chrome WebDriver:
+3. If you encounter permission issues on Termux or other environments, check the permissions of the `pip` executable:
+    ```bash
+    ls -l venv/bin/pip
+    chmod +x venv/bin/pip
+    ```
+
+4. If permissions issues persist, you can install the dependencies globally or in your user directory without using a virtual environment. This is not recommended for production but can be a workaround.:
+   ```bash
+   pip install --user -r requirements.txt
+   ```
+
+5. If the above steps don't work, try recreating the virtual environment.
+
+   ```bash
+   deactivate
+   rm -rf venv
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ``` 
+
+6. Install Chrome WebDriver:
     - The script uses `webdriver-manager` to automatically install and manage Chrome WebDriver.
 
 ## Usage
